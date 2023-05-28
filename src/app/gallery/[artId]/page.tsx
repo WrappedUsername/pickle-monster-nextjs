@@ -9,7 +9,7 @@ async function getArt(artId: string) : Promise<Art> {
 }
 
 interface Art {
-  title: string
+  title: string;
 }
 
 export default async function artPage({params}: {params: {artId: string }}) : Promise<JSX.Element> {

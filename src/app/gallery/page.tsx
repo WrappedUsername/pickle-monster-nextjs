@@ -21,8 +21,10 @@ const GalleryPage: React.FC = () => {
     [art]);
    
   return (
-    <div>
-      <h1>{art.title}Test</h1>
+    <div className="relative flex-col min-h-screen items-center justify-between .div">
+      <h1 className="flex w-full text-4xl font-bold float-left .h1">
+        {art.title}Gallery
+      </h1>
     </div>
   );
 };

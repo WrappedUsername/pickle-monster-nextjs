@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row h-26 text-2xl font-bold cursor-pointer hover:green-300">
-        <Link href={'/gallery/'}>Gallery</Link>
-        </nav>
+    <nav className="relative">
+    <Link className="fixed h-24 flex-row text-2xl font-bold cursor-pointer" href={'/gallery/'}>Gallery</Link>
+    </nav>
   )
 }
 

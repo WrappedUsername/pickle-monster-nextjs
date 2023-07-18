@@ -1,4 +1,4 @@
-import 
+import {*} with 
 
 walker init {
     root {

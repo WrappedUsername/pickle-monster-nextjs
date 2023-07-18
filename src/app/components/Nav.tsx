@@ -1,7 +1,8 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className='relative'>
       <div className='flex flex-row items-center justify-between'>

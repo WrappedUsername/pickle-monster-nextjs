@@ -3,6 +3,17 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const Navbar: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+        try {
+            setLoading(false);
+        } catch (error) {
+            setError(true);
+        }
+    },
+[]);
+
   return (
     <nav className='relative'>
       <div className='flex flex-row items-center justify-between'>

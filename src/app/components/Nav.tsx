@@ -4,21 +4,23 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav className='relative'>
-      <div className="flex flex-col md:flex-row h-24 w-full justify-between p-2">
+      <div className='flex flex-row items-center justify-between'>
+      <div className="flex h-24 w-3/4 p-2">
         <Link 
-          className='fixed h-24 cursor-pointer text-2xl font-bold'
+          className='fixed h-24 w-3/4 cursor-pointer text-2xl font-bold'
           href={"/"}
         >
           Pickle Monster Cinematics
         </Link>
         </div>
-        <div className="flex flex-col md:flex-row h-24 w-full justify-between p-2">
+        <div className="flex h-24 w-1/4 p-2">
         <Link
-          className='fixed h-24 cursor-pointer text-2xl font-bold float-right'
+          className='fixed h-24 w-1/4 cursor-pointer text-2xl font-bold float-right'
           href={"/gallery/"}
         >
           Gallery
         </Link>
+      </div>
       </div>
     </nav>
   );

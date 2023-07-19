@@ -1,16 +1,13 @@
 import {*} with 
 
-global auth_user_conv = {{conv_state}};
-global auth_user_password = {{saved_password}};
-
 walker init {
-    last_conv_state = global.auth_user_conv;
-    last_saved_password = global.auth_user_password;
-
-    std.out(last_conv_state);
-    std.out(last_saved_password);
+    last_conv_state = {"key1":"value1", "key2":"value2"}
+    auth_user_password = {"key1":"value1", "key2":"value2"};
 
     root {
         spawn here --> graph::faq_state;
     }
+
+    report auth_user_password.dict::items;
+    report last_conv_state.dict::items;
 }

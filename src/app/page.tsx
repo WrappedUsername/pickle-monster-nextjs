@@ -8,6 +8,7 @@ export default function Home() {
       {/**<video autoPlay muted loop className='.video flex object-cover'>
         <source src='/vbg.mp4' type='video/mp4' />
   </video>*/}
+  Home
     </div>
   );
 }

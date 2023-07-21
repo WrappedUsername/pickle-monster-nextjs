@@ -15,8 +15,8 @@
   }
 }
 
-.flexCenter {
-  @apply flex flex-row justify-center items-center;
+.flexBetween {
+  @apply flex flex-row justify-between items-center;
 }
 
 main {

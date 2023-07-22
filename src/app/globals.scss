@@ -16,7 +16,7 @@
 }
 
 .flexBetween {
-  @apply flex flex-row justify-between items-center;
+  @apply fixed h-16 w-screen justify-between items-center;
 }
 
 main {

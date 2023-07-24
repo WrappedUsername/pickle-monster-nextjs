@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className='flex h-screen flex-col items-center justify-between'>
+    <div className='flex flex-col w-full h-screen items-center justify-between p-12'>
       {/**<video autoPlay muted loop className='.video flex object-cover'>
         <source src='/vbg.mp4' type='video/mp4' />
   </video>*/}

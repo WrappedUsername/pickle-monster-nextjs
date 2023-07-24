@@ -15,16 +15,16 @@ const Navbar: React.FC = () => {
 []);
 
   return (
-    <nav className='relative h-16 w-screen'>
+    <nav className='relative w-full h-16'>
       <div className='flexBetween'>
         <Link 
-          className='flex flex-col md:flex-row h-16 w-3/4 cursor-pointer text-2xl font-bold'
+          className='flex flex-row h-16 w-3/4 cursor-pointer text-2xl font-bold p-4'
           href={"/"}
         >
           Pickle Monster Cinematics
         </Link>
         <Link
-          className='flex flex-col md:flex-row h-16 w-1/4 cursor-pointer text-2xl font-bold float-right'
+          className='flex flex-row h-16 w-1/4 cursor-pointer text-2xl font-bold float-right p-4'
           href={"/gallery/"}
         >
           Gallery

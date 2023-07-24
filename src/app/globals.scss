@@ -16,7 +16,7 @@
 }
 
 .flexBetween {
-  @apply flex flex-col md:flex-row h-64 md:h-16 w-full justify-between items-center p-4;
+  @apply flex flex-col md:flex-row h-32 md:h-16 w-full justify-between items-center p-4;
 }
 
 main {

@@ -21,7 +21,7 @@ const GalleryPage: React.FC = () => {
     [art]);
    
   return (
-      <h1 className="flex flex-col h-screen w-full text-4xl font-bold text-center justify-between .h1 p-12 pt-64 md:pt-12">
+      <h1 className="text-white flex flex-col h-screen w-full text-4xl font-bold text-center justify-between .h1 p-12 pt-64 md:pt-12">
         {art.title}Gallery
       </h1>
   );

@@ -4,11 +4,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className='flex flex-col w-full h-screen text-4xl font-bold items-center justify-between p-12 pt-64 md:pt-12'>
-      {/**<video autoPlay muted loop className='.video flex object-cover'>
+    <div className='flex flex-col w-full h-screen text-4xl font-bold items-center justify-between pt-64 md:pt-12'>
+      <video autoPlay muted loop className='.video flex object-cover'>
         <source src='/vbg.mp4' type='video/mp4' />
-  </video>*/}
-  Home
+  </video>
     </div>
   );
 }

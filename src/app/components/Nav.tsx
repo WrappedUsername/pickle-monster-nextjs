@@ -23,6 +23,9 @@ const Navbar: React.FC = () => {
         >
           Pickle Monster Cinematics
         </Link>
+        <p className='text-white md:1/2 flex h-16 w-full flex-col items-center justify-between p-4 text-sm md:flex-row'>
+          A DCS World fan art and cinematic website
+        </p>
         <Link
           className='text-white flex flex-col md:flex-row md:h-16 md:w-1/4 h-32 w-full cursor-pointer text-2xl font-bold float-right p-4'
           href={"/gallery/"}

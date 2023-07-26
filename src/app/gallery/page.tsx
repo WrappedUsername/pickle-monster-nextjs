@@ -6,9 +6,9 @@ import CheckoutForm from "../components/CheckoutForm";
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
-const stripePromise = loadStripe(
+/** const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-);
+);*/
 
 const GalleryPage: React.FC = () => {
     /** const [art, setArt] = useState<any>([]);
@@ -56,12 +56,19 @@ const GalleryPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col w-96 h-96 p-16 bg-slate-300">
-      {clientSecret && (
+    <div className="relative w-full h-fit">
+    <div className="flex flex-row w-96 h-96 p-16 bg-slate-300 rounded-lg place-items-center">
+      {/** {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
           <CheckoutForm />
         </Elements>
-      )}
+      )} */}
+      {/** {clientSecret && (
+        <Elements options={options} stripe={stripePromise}>
+          <CheckoutForm />
+        </Elements>
+      )} */}
+    </div>
     </div>
   );
 };

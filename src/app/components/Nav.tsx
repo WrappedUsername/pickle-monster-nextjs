@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
           className='text-white flex flex-col md:flex-row md:h-16 md:w-1/4 h-32 w-full cursor-pointer text-2xl font-bold float-right p-4'
           href={"/gallery/"}
         >
-          Aviation Art Gallery
+          Art Gallery
         </Link>
       </div>
     </nav>

@@ -57,16 +57,23 @@ const GalleryPage: React.FC = () => {
 
   return (
     <div className='relative h-fit w-full'>
-      <div className='flex flex-row h-96 w-96 justify-center rounded-lg bg-slate-300 p-16'>
-        <h1 className='flex flex-col text-normal justify-center text-center font-bold'>
+      <div className='flex h-fit w-full flex-col md:flex-row pt-32 md:pt16'>
+        <div className='flex h-64 md:h-96 w-1/2 flex-row justify-center rounded-lg bg-slate-300'>
+          <h1 className='text-normal flex flex-col justify-center text-center font-bold'>
+            Aviation Art
+          </h1>
+        </div>
+        <div className='text-normal flex flex-row font-bold text-white'>
           Aviation Art
-        </h1>
-      </div>
-
-      <div className='flex flex-row h-96 w-96 justify-center float-right rounded-lg bg-slate-300 p-16'>
-        <h1 className='flex flex-col text-normal justify-center text-center font-bold'>
+        </div>
+        <div className='float-right flex h-64 md:h-96 w-1/2 flex-row justify-center rounded-lg bg-slate-300'>
+          <h1 className='text-normal flex flex-col justify-center text-center font-bold'>
+            Aviation Art
+          </h1>
+        </div>
+        <div className='text-normal flex flex-row font-bold text-white'>
           Aviation Art
-        </h1>
+        </div>
       </div>
       {/** {clientSecret && (
         <Elements options={options} stripe={stripePromise}>

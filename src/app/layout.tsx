@@ -1,10 +1,10 @@
 import "./globals.scss";
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
 import Head from "next/head";
 import Nav from "./components/Nav"
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Oswald({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pickle Monster Cinematics",
@@ -22,7 +22,7 @@ export default function RootLayout({
         <title>Pickle Monster Cinematics</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <Nav />
         {children}
         <Footer />

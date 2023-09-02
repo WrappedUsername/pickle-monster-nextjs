@@ -2,26 +2,16 @@
 import React, {useEffect, useState} from 'react';
 
 const GalleryPage: React.FC = () => {
-  const [clientSecret, setClientSecret] = React.useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
-  React.useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    fetch('/checkout_sessions', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({items: [{id: 'prod_OKlQjZZnR0I39L'}]}),
-    })
-      .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
+  useEffect(() => {
+    try {
+      setLoading(false);
+    } catch (error) {
+      setError(true);
+    }
   }, []);
-
-  const appearance = {
-    theme: 'stripe',
-  };
-  const options:any = {
-    clientSecret,
-    appearance,
-  };
 
   return (
     <div className='relative h-fit w-full'>
